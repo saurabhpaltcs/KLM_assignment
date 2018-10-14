@@ -4,7 +4,7 @@ KLM case study
 
 1. mock_project_rest_api : This contains mock project with required rest services .
 
-2. KLM_assigment_spring-boot : This contains sprin-boot project consuming mock_proj_rest api's and showing UI using angular .
+2. KLM_assigment_spring-boot : This contains spring-boot project consuming mock_proj_rest api's and showing UI using angular .
 
     #Angular project is included and exposed in this spring-boot project
     
