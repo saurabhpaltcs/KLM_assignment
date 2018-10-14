@@ -1,0 +1,5 @@
+server:
+    port: 9000
+    contextPath: /travel
+    klm-rest-public-url: http://localhost:8080/
+    klm-rest-statics-url: http://localhost:9000/travel/
