@@ -1,0 +1,34 @@
+<form class="form-header">
+    <div class="row header-bar">
+        <h4 class="header-style">Search flights</h4>
+    </div>
+    <div class="row" style="margin-bottom:30px;margin-left:10px !important;">
+        <div class="col-lg-3 col-sm-12 col-md-3 col-xs-12">
+            <span>Origin :</span>
+            <div class="typeaheadMulti__container">
+                <div class="typeaheadMulti__field">
+                    <div class="typeaheadMulti__query">
+                        <input class="form-control" [(ngModel)]="source" id="field1" class="js-typeahead-country_v1" name="field1" type="search"
+                            placeholder="type to search" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-3 col-xs-12">
+            <span>Destination :</span>
+            <div class="typeaheadMulti__container">
+                <div class="typeaheadMulti__field">
+                    <div class="typeaheadMulti__query">
+                        <input class="form-control" [(ngModel)]="destination" id="field2" class="js-typeahead-country_v1" name="field1" type="search"
+                            placeholder="type to search" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" (click)="onSearch()" class="btn searchButton"> Search </button>
+    </div>
+    <div style="margin-top:25px;margin-bottom:10px;" class="row" *ngIf="displayCheck">
+        <span style="margin-left: 42px;font-family: initial;font-weight: bolder; font-size:large;" *ngIf="farePrice== 0.0">Flight not found on this route </span>
+        <span style="margin-left: 42px;font-family: initial;font-weight: bolder; font-size:large;" *ngIf="farePrice >0.0">Fare : {{farePrice}} {{farePriceCurrency}} </span>
+    </div>
+</form>

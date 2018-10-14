@@ -1,0 +1,28 @@
+<form class="static-form-header">
+    <div class="row static-header-bar">
+        <h4 class="header-style">Statistics </h4>
+
+    </div>
+
+   
+    <button type="submit" (click)="getStatics()" class="btn metricsButton">Get Metrics</button>
+
+    <div style="margin-top:10px;" *ngIf="staticsObj">
+        <div>
+            <span class="metricsField" *ngIf="!staticsObj.totalRequest">Total No of Request : 0 </span>
+            <span class="metricsField" *ngIf="staticsObj.totalRequest">Total No of Request : {{staticsObj.totalRequest}} </span>
+        </div>
+        <div style="margin-top:5px">
+            <span class="metricsField" *ngIf="!staticsObj.status2xx">Request in OK status : 0 </span>
+            <span class="metricsField" *ngIf="staticsObj.status2xx">Request in OK status : {{staticsObj.status2xx}} </span>
+        </div>
+        <div style="margin-top:5px">
+            <span class="metricsField" *ngIf="!staticsObj.status4xx">Request in 4XX status : 0 </span>
+            <span class="metricsField" *ngIf="staticsObj.status4xx">Request in 4XX status : {{staticsObj.status4xx}} </span>
+        </div>
+        <div style="margin-top:5px">
+            <span class="metricsField" *ngIf="!staticsObj.status5xx">Request in 5XX status : 0 </span>
+            <span class="metricsField" *ngIf="staticsObj.status5xx">Request in 5XX status : {{staticsObj.status5xx}} </span>
+        </div>
+    </div>
+</form>

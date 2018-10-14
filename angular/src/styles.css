@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+.form-header {
+border:1px solid cadetblue;margin-left: 10px;margin-right: 10px; 
+}
+.static-form-header{
+border:1px solid cadetblue;margin-left: 10px;margin-right: 10px;margin-top:10px;padding-bottom:10px;
+}
+.header-bar{
+margin-right:25px;margin-left:25px !important;margin-top: 20px !important;font-family: serif;font-weight: bolder;font-size: x-large;color: white;background-color: darkcyan;margin-bottom: 25px;
+}
+.static-header-bar{
+margin-right:25px;margin-left:25px !important;margin-top: 20px !important;font-family: serif;font-weight: bolder;font-size: x-large;color: white;background-color: darkcyan;margin-bottom: 10px;
+}
+.header-style{
+margin-left:5px;font-family: serif;font-weight: bolder;font-size: x-large;color: white;
+}
+.searchButton{
+margin-top: 20px;margin-left: 20px;background-color: dodgerblue;color: white;font-family: cursive;
+}
+.metricsButton{
+margin-top: 5px;margin-left: 25px;background-color: dodgerblue;color: white;font-family: cursive;
+}
+.metricsField{
+margin-left: 30px;font-family: initial;font-weight: 500; font-size:initial;
+}
