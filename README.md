@@ -6,7 +6,7 @@ KLM case study
 
 2. KLM_assigment_spring-boot : This contains sprin-boot project consuming mock_proj_rest api's and showing UI using angular .
 
-    #Andular project is included and exposed in this spring-boot project
+    #Angular project is included and exposed in this spring-boot project
     
     #Url to access assignment  : http://localhost:9000/travel/index.html
     
